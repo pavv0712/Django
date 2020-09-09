@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>좋아하는것</title>
+
+</head>
+<body>
+    <h1>즐겨찾기</h1>
+
+    {% for favo in favorite %}
+    <div>
+        <div>{{ favo.name }}</div>
+        <div>{{favo.reg_date|date:'Y-m-d'}}</div>
+        <div>{{ favo.group }}</div>
+    </div>
+    {% endfor %}
+
+
+</body>
+</html>

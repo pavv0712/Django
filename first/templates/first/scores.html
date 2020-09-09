@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+    환영합니드으리
+    </title>
+</head>
+<body>
+    <h1>점수<h1>
+    
+    {% for score in scores %}
+    <div>
+    {{score.name}}
+    {{score.score1}}
+    {{score.score2}}
+    {{score.score3}}
+    </div>
+    {% endfor %}
+</body>
+
+</html>
